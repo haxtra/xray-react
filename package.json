@@ -1,0 +1,12 @@
+{
+  "name": "@haxtra/xray-react",
+  "version": "0.9.0",
+  "description": "Interactive javascript object browser/inspector for React",
+  "homepage": "https://github.com/haxtra/xray-react",
+  "repository": "github:haxtra/xray-react",
+  "main": "XRay.jsx",
+  "scripts": {},
+  "keywords": ["web","component","devtool","react","xray"],
+  "author": "Hax <hax@haxtra.com>",
+  "license": "MIT"
+}

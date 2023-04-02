@@ -1,0 +1,48 @@
+.XRay 												{ font-size:11px; font-family:monospace; background:#222; }
+.XRay .xrHeader 									{ padding:3px 6px; color:#fff; background:#080808; }
+
+.XRay .xrHeader.xrMinimized .xrTitle				{ color:#999}
+.XRay .xrHeader.xrMinimized .xrTitle:before			{ content:"# "; color:#555;}
+
+.XRay .xrTitle 										{ cursor:pointer; }
+.XRay .xrTitle:before								{ content:"# "; color:#03c1fb; }
+
+.XRay .xrContent									{ padding:4px }
+
+.XRay .xrString										{ color:#af3; background:#171717; white-space:pre-wrap;}
+.XRay .xrNumeric									{ color:#F02475 }
+.XRay .xrBool										{ color:#9E5EFF }
+.XRay .xrNull										{ color:#aaa; font-style:italic; }
+.XRay .xrFunction									{ color:#8Bb1FF; font-style:italic; }
+.XRay .xrFunction + table							{ margin-top:3px;}
+
+.XRay .xrEmpty 										{ color:#888; }
+.XRay .xrEmpty.xrString:after						{ content:'"empty"'; }
+.XRay .xrEmpty.xrArray:after						{ content:'[empty]'; }
+.XRay .xrEmpty.xrObject:after						{ content:'{empty}'; }
+
+.XRay .xrLabel										{ color:#fff; background:#444; white-space: pre; font-size:9px; font-weight:bold; padding:1px 4px 0; margin-right:3px;}
+.XRay .xrLabel + table								{ margin-top:3px;}
+
+.XRay .xrLabel.xrInstance							{ color:#5ef059; background:#154a11; white-space: pre; font-size:9px; font-weight:bold; padding:0px 3px; margin-right:3px;}
+
+.XRay .xrDate 										{ color:#0f9; }
+.XRay .xrRegExp 									{ color:#df0; }
+.XRay .xrError 										{ color:#f00; background:#400; display:inline-block; font-weight:bold;}
+.XRay .xrError .xrLabel								{ color:#000; background:#f00;}
+.XRay .xrSymbol 									{ color:#e62; }
+.XRay .xrUnknown									{ color:#f50; background:#310; white-space:pre; cursor:pointer;}
+.XRay .xrUnknown .xrLabel							{ color:#000; background:#f50;}
+.XRay .xrSuperArray									{ color:#ff0; background:#110; cursor:pointer;}
+.XRay .xrCircularReference .xrLabel					{ color:#000; background:#f80;}
+
+.XRay table											{ border-spacing:0; border-collapse:collapse; }
+.XRay table td										{ padding:3px; text-align:left; vertical-align:top; border:1px solid #1a1a1a; }
+
+.XRay td.xrKey										{ color:#00B4FF; background:#1d1d1d; text-align:right; cursor:default; }
+.XRay td.xrKey.xrArray								{ color:#555; }
+
+.XRay tr.xrCollapsed td.xrKey						{ color:#fd0; }
+.XRay tr.xrCollapsed td.xrValue:after				{ content:"..."; color:#777; }
+
+.XRay .xrCounts										{ font-size:8px; padding-top:4px; color:#555; white-space:pre; }
